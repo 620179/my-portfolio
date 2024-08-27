@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title className="homePageTitle">My Portfolio</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../utils/scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+
+  <body>
+     <!-- Navigation Bar -->
+    <nav className="navbar">
+      <ul className="navbar-list">
+        <li className="navbar-item"><a href="#home" className="navbar-link">Home</a></li>
+        <li className="navbar-item"><a href="#about" className="navbar-link">About</a></li>
+        <li className="navbar-item"><a href="#projects" className="navbar-link">Projects</a></li>
+        <li className="navbar-item"><a href="#contact" className="navbar-link">Contact</a></li>
+        <li className="navbar-item"><a href="#" className="navbar-link"><span className="fa fa-sign-in-alt"></span></a></li>
+      </ul>
+    </nav>
+
+    <h1 id="homePageTitle">Welcome to My Portfolio</h1>
+    
+    <div className="flexbox-container">
+        <div className="flexbox-item flexbox-item-1">
+          <img src="./img/1.jpg" alt="Description 1" className="flexbox-image">
+        </div>
+        <div className="flexbox-item flexbox-item-2">
+          <img src="./img/2.jpg" alt="Description 1" className="flexbox-image">
+        </div>
+        <div className="flexbox-item flexbox-item-3">
+          <img src="./img/3.jpg" alt="Description 1" className="flexbox-image">
+        </div>
+        <div className="flexbox-item flexbox-item-3">
+          <img src="./img/4.jpg" alt="Description 1" className="flexbox-image">
+        </div>
+        <div className="flexbox-item flexbox-item-3">
+          <img src="./img/5.jpg" alt="Description 1" className="flexbox-image">
+        </div>
+        <div className="flexbox-item flexbox-item-3">
+          <img src="./img/6.jpg" alt="Description 1" className="flexbox-image">
+        </div>
+    </div>
+    <div className="button-container">
+      <button className="btn color" onclick="changeColor()">Change Header Color</button>
+      <button className="btn color" onclick="changeColorBack()">Change Header Color Back</button>
+      <button className="btn color" onclick="toggleColor()">Toggle Header Color</button>
+    </div>    
+
+    <div className="form-container">
+      <h1 className="form-title" id="form-title">Registration Form</h1>
+  
+      <!-- Registration Form -->
+      <form id="registrationForm">
+          <label for="firstName" className="form-label">First Name:</label>
+          <input type="text" id="firstName" name="firstName" className="form-input" required>
+  
+          <label for="lastName" className="form-label">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" className="form-input" required>
+  
+          <label for="email" className="form-label">Email:</label>
+          <input type="email" id="email" name="email" className="form-input" required>
+  
+          <label for="password" className="form-label">New Password:</label>
+          <input type="password" id="password" name="password" className="form-input" required>
+  
+          <label for="confirmPassword" className="form-label">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" className="form-input" required>
+  
+          <button type="submit" className="form-button">Register</button>
+          <span className="form-switch-link" onclick="switchToLogin()">Already registered? Log in here</span>
+      </form>
+  
+      <!-- Login Form -->
+      <form id="loginForm" className="hidden">
+          <label for="loginEmail" className="form-label">Email:</label>
+          <input type="email" id="loginEmail" name="loginEmail" className="form-input" required>
+  
+          <label for="loginPassword" className="form-label">Password:</label>
+          <input type="password" id="loginPassword" name="loginPassword" className="form-input" required>
+  
+          <button type="submit" className="form-button">Login</button>
+          <span className="form-switch-link" onclick="switchToRegister()">Don't have an account? Register here</span>
+      </form>
+  </div>
+  </body>
+
+</html>

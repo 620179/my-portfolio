@@ -1,0 +1,457 @@
+/* Global Styles - Applies to all elements within the <body> */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* More refined font for the entire page */
+    background-color: #f1f1f1; /* Very light grey background for a sophisticated look */
+    color: #333333; /* Dark grey text color for the entire page */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for the main heading (h1) */
+#homePageTitle {
+    color: #d63a6e; /* Rich baby pink color for the main heading */
+    text-align: center; /* Centers the text horizontally */
+    text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 0.2),  
+         1px -1px 0 rgba(0, 0, 0, 0.2),
+        -1px  1px 0 rgba(0, 0, 0, 0.2),
+         1px  1px 0 rgba(0, 0, 0, 0.2),
+         4px 4px 10px rgba(0, 0, 0, 0.3); /* Adds a more elegant shadow effect */
+    -webkit-text-stroke: 1px #d63a6e; /* Adds a pink stroke to the text for added luxury */
+    pointer-events: none;
+}
+
+/* Flexbox Container Styles - Styles for the .flexbox-container that holds the flexbox items */
+.flexbox-container {
+    display: flex; /* Applies flexbox layout */
+    justify-content: center; /* Centers the flexbox items horizontally */
+    align-items: flex-start; /* Aligns items at the start of the container to maintain consistent height */
+    gap: 20px; /* Adds a larger gap between flexbox items */
+    padding: 20px; /* Adds padding inside the flexbox container */
+    background-color: #ffffff; /* White background for a clean and elegant look */
+    border: 1px solid #e0e0e0; /* Subtle light grey border */
+    border-radius: 10px; /* Rounds the corners of the flexbox container for a more luxurious feel */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow effect */
+}
+
+/* Flexbox Item Styles - Applies to each flexbox item inside the flexbox container */
+.flexbox-item {
+    width: 240px; /* Sets a slightly larger width for each flexbox item */
+    margin: 15px; /* Adds margin around each flexbox item */
+    color: #333333; /* Dark grey text color */
+    min-height: 200px; /* Ensures a larger minimum height for a more luxurious appearance */
+    display: flex; /* Applies flexbox layout to the item itself */
+    justify-content: center; /* Centers content horizontally within each flexbox item */
+    align-items: center; /* Centers content vertically within each flexbox item */
+    text-align: center; /* Centers the text within each flexbox item */
+    background-color: #ffffff; /* White background for the items */
+    border: 1px solid #e0e0e0; /* Subtle light grey border to add refinement */
+    border-radius: 10px; /* Rounds the corners of the items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow effect */
+}
+
+.flexbox-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+}
+
+/* Hover Effects - Applied when hovering over flexbox items and buttons */
+.flexbox-item:hover,
+button:hover {
+    filter: opacity(1); /* Ensures full opacity on hover */
+    transform: scale(1.05); /* Slightly enlarges the item or button on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a more pronounced shadow on hover */
+}
+
+/* Button Container Styles - Centers the buttons in the container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers the buttons vertically if there's a height */
+    gap: 15px; /* Adds space between the buttons */
+    margin: 20px 0; /* Adds margin above and below the button container */
+}
+
+/* Button Styles */
+.button-container .btn {
+    background-color: #d63a6e; /* Rich baby pink background color */
+    color: #ffffff; /* White text color */
+    padding: 12px 24px; /* Adds padding inside the button */
+    border: none; /* Removes the default border */
+    border-radius: 8px; /* Rounds the corners of the buttons */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 16px; /* Sets a consistent font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adds smooth transition for hover effects */
+}
+
+/* Hover Effect for Buttons */
+.button-container .btn:hover {
+    background-color: #c6286c; /* Slightly darker pink on hover */
+    color: #fce4ec; /* Light pink text color on hover */
+    transform: scale(1.05); /* Slightly increases the size of the button on hover */
+}
+
+/* Form Container Styles - Styles the container holding the registration and login forms */
+.form-container {
+    background-color: #ffffff; /* White background for the form container */
+    border-radius: 10px; /* Rounds the corners of the form container for a luxurious feel */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a soft shadow around the form container */
+    width: 380px; /* Sets a fixed width for the form container */
+    padding: 20px; /* Adds padding inside the form container */
+    margin: 20px auto; /* Centers the form container horizontally on the page */
+    z-index: 1; /* Ensures the form container appears above other content */
+    position: relative; /* Allows for positioning of child elements or pseudo-elements */
+}
+
+/* Form Title Styles - Applies to the title of the form (h1 within the form container) */
+.form-title {
+    text-align: center; /* Centers the title text */
+    color: #d63a6e; /* Rich baby pink color for the title */
+    font-size: 28px; /* Sets the font size of the title */
+    margin-bottom: 20px; /* Adds margin below the title */
+}
+
+/* Form Label Styles - Applies to labels within the forms */
+.form-label {
+    display: block; /* Displays the label as a block element, making it full-width */
+    margin-bottom: 5px; /* Adds space below each label */
+    color: #333333; /* Dark grey color for labels */
+}
+
+/* Form Input Styles - Applies to all input fields within the forms */
+.form-input {
+    width: 100%; /* Makes the input field full-width */
+    padding: 12px; /* Adds padding inside the input field */
+    margin-bottom: 15px; /* Adds space below each input field */
+    border: 1px solid #e0e0e0; /* Adds a subtle light grey border */
+    border-radius: 8px; /* Rounds the corners of the input field */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+    font-size: 14px; /* Sets the font size inside the input field */
+    background-color: #fafafa; /* Light grey background color for the input fields */
+}
+
+/* Form Button Styles - Applies to all buttons within the forms */
+.form-button {
+    width: 100%; /* Makes the button full-width */
+    background-color: #d63a6e; /* Rich baby pink background color */
+    color: #ffffff; /* White text color */
+    padding: 12px; /* Adds padding inside the button */
+    border: none; /* Removes any default border */
+    border-radius: 8px; /* Rounds the corners of the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    font-size: 16px; /* Sets the font size inside the button */
+    transition: background-color 0.3s ease; /* Adds smooth transition for hover effects */
+}
+
+/* Form Button Hover Effect - Changes the button color when hovered */
+.form-button:hover {
+    background-color: #c6286c; /* Slightly darker pink on hover */
+    color: #fce4ec; /* Light pink text color on hover */
+}
+
+/* Form Switch Link Styles - Applies to the links that switch between registration and login forms */
+.form-switch-link {
+    display: block; /* Displays the link as a block element */
+    text-align: center; /* Centers the link text */
+    margin-top: 10px; /* Adds space above the link */
+    font-size: 14px; /* Sets the font size of the link text */
+    color: #d63a6e; /* Rich baby pink color for the link */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the link */
+}
+
+/* Form Switch Link Hover Effect - Adds an underline to the link when hovered */
+.form-switch-link:hover {
+    text-decoration: underline; /* Underlines the link text on hover */
+    color: #c2185b; /* Darker pink color on hover */
+}
+
+/* Hidden Class - Used to hide elements (e.g., the login form when the registration form is shown) */
+.hidden {
+    display: none; /* Hides the element from view */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #ffffff; /* White background color for the navbar */
+    padding: 15px 30px; /* Adds padding inside the navbar */
+    position: sticky; /* Keeps the navbar at the top of the page when scrolling */
+    top: 0; /* Sticks the navbar to the top of the page */
+    z-index: 1000; /* Ensures the navbar stays on top of other content */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow under the navbar */
+}
+
+.navbar-list {
+    list-style-type: none; /* Removes default list styling */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Aligns the list items horizontally */
+    justify-content: space-between; /* Distributes space between the first and last items */
+    align-items: center; /* Centers items vertically */
+}
+
+.navbar-item {
+    margin-right: 20px; /* Adds space between each navbar item */
+}
+
+/* Specific style to move the login item to the right */
+.navbar-login {
+    margin-left: auto; /* Pushes the login item to the right by taking up remaining space */
+}
+
+/* Additional styles for the login link */
+.navbar-link {
+    color: #d63a6e; /* Rich baby pink color for the links */
+    text-decoration: none; /* Removes the underline from links */
+    font-size: 18px; /* Sets the font size of the links */
+    font-weight: bold; /* Makes the links bold */
+    padding: 8px 12px; /* Adds padding inside the links */
+    border-radius: 8px; /* Rounds the corners of the links */
+    transition: background-color 0.3s ease; /* Adds a transition effect when hovering over links */
+}
+
+.navbar-link:hover {
+    background-color: #f8bbd0; /* Light pink background color on hover */
+    color: #d63a6e; /* Rich baby pink color on hover */
+}
+
+/* Responsive Navigation Bar */
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column; /* Stacks the navbar items vertically on smaller screens */
+        align-items: flex-start; /* Aligns items to the start (left) */
+    }
+
+    .navbar-item {
+        margin-right: 0; /* Removes right margin on smaller screens */
+        margin-bottom: 10px; /* Adds bottom margin between items on smaller screens */
+    }
+}
+.contact-us-wrapper {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    min-height: 100vh; /* Ensures the wrapper takes up the full viewport height */
+    background-color: #f1f1f1; /* Light grey background for the whole page */
+    padding: 20px; /* Adds some padding around the content */
+    box-sizing: border-box; /* Ensures padding is included in height calculations */
+}
+
+/* Styles the content within the contact-us-content */
+.contact-us-content {
+    text-align: center; /* Centers text inside this container */
+    max-width: 800px; /* Limits the width of the content for readability */
+    background-color: #ffffff; /* White background for the content area */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+    padding: 20px; /* Adds padding inside the content area */
+    box-sizing: border-box; /* Ensures padding is included in width calculations */
+}
+.item2 {
+    width: 240px; /* Sets a slightly larger width for each flexbox item */
+    margin: 15px; /* Adds margin around each flexbox item */
+    color: #333333; /* Dark grey text color */
+    min-height: 200px; /* Ensures a larger minimum height for a more luxurious appearance */
+    display: flex; /* Applies flexbox layout to the item itself */
+    justify-content: center; /* Centers content horizontally within each flexbox item */
+    align-items: center; /* Centers content vertically within each flexbox item */
+    text-align: center; /* Centers the text within each flexbox item */
+    background-color: #ffffff; /* White background for the items */
+    border: 1px solid #e0e0e0; /* Subtle light grey border to add refinement */
+    border-radius: 10px; /* Rounds the corners of the items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a soft shadow effect */
+
+}
+
+
+
+
+
+/* 
+footer */
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .footer .social-media-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .footer .social-media-links li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .footer .social-media-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  .footer .social-media-links a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* Global Styles */
+.homePage {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light background color for better contrast */
+    color: #333; /* Dark text color for readability */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+
+  /* Title Styles */
+  .homePageTitle {
+    color: #0056b3; /* Deep blue color for the main heading */
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5em;
+    margin-bottom: 0;
+  }
+  
+  .home-title {
+    color: #003d7a; /* Darker blue for section titles */
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  /* Image Gallery Styles */
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .image-item {
+    text-align: center;
+  }
+  
+  .circle-image {
+    border-radius: 50%;
+    width: 150px; /* Fixed size for the circular images */
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted effect */
+  }
+  
+  .image-description {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #0056b3; /* Matching blue color for text */
+  }
+  
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background:  #d63a6e; /* Dark blue-gray background for footer */
+    color: #fff; /* White text color */
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .footer .social-media-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .footer .social-media-links li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  .footer .social-media-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  .footer .social-media-links a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* projects */
+
+
+  /* Project Page Styles */
+.project-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Header Styles */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    color: #2c3e50; /* Dark blue-gray color for the header text */
+  }
+  
+  /* Main Content Styles */
+  .content {
+    padding: 20px;
+  }
+  
+  .info-section,
+  .skills-section {
+    margin-bottom: 20px;
+  }
+  
+  .info-section h2,
+  .skills-section h2 {
+    font-size: 1.8em;
+    color: #34495e; /* Slightly lighter blue-gray color */
+    border-bottom: 2px solid #3498db; /* Blue underline for section headings */
+    padding-bottom: 10px;
+  }
+  
+  .skills-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-section li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Styles */
