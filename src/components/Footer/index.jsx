@@ -5,11 +5,17 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p>Contact me on social media</p>
-      <div className="social-media">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-      </div>
+      <div class="footer-container">
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+                <img src="/img/images.jpg" alt="twitter" /> 
+            </a>
+            <a href="https://facebook.com" class="social-icon" target="_blank">
+            <img src="/img/face.jpg" alt="facebook" /> 
+            </a>
+            <a href="https://instagram.com" class="social-icon" target="_blank">
+            <img src="/img/15707869.jpg" alt="instagram" /> 
+            </a>
+        </div>
     </footer>
   );
 };
