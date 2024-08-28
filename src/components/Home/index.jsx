@@ -11,7 +11,19 @@ const HomePage = () => {
                 <Gallery/>
                 <Buttons/>
                 <h1 className="title">Innovating with Technology</h1>
-               
+                <div class="image-container">
+  <div class="image-box">
+  <img src="/img/js.jpg" alt="js" class="circled-img" />  
+    
+  </div>
+  <div class="image-box">
+  <img src="/img/python.jpg" alt="python" class="circled-img" />
+    
+  </div>
+  <div class="image-box">
+  <img src="/img/react.jpg" alt="react" class="circled-img" />
+  </div>
+</div>
                 <Footer/>
 
             </div>          

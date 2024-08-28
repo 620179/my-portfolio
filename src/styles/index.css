@@ -479,3 +479,19 @@ footer */
 }
 
   /* Footer Styles */
+  .image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .image-box {
+    text-align: center;
+  }
+  
+  .circled-img {
+    border-radius: 50%;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    object-fit: cover;
+  }
