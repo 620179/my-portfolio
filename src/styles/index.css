@@ -6,6 +6,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url('../../public/img/Summer.jpg');
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-size: cover; /* Covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed;
 }
 
 /* Styles for the main heading (h1) */
@@ -313,8 +318,13 @@ footer */
   /* Global Styles */
 .homePage {
     font-family: Arial, sans-serif;
-    background-color: #f0f4f8; /* Light background color for better contrast */
-    color: #333; /* Dark text color for readability */
+    background-image: url('../../public/img/Summer.jpg');
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-size: cover; /* Covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    /*background-color: #f0f4f8; /* Light background color for better contrast */
+   /* color: #333; /* Dark text color for readability */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
